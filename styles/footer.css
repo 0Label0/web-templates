@@ -1,0 +1,35 @@
+
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: var(--backgrounds);
+  color: #fff;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon-footer {
+  font-size: 25px;
+  display: inline-block;
+  margin: 5px;
+  transition: .5s;
+}
+.menu-icon {
+  color: rgba(249, 249, 249, 0.684);
+}
+.menu-icon:hover{
+  color: #fff;
+}
+
+.icon-footer:hover {
+  transform: translateY(-5px);
+}
+
+.menu-footer {
+  display: flex;
+  gap: 15px;
+}

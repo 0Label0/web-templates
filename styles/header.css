@@ -1,0 +1,166 @@
+
+/* TOP HEADER */
+header .header-top {
+  display: flex;
+  transition: all .4s;
+
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: var(--backgrounds);
+  padding: 10px;
+  color: #ededed;
+  font-size: 1.1rem;
+}
+
+
+.social-media-container {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.social-media-container i:hover {
+  color: #b8b8b8fd;
+  
+}
+
+/* BUTTOM HEADER STIKY */
+header .header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: sticky;
+  font-size: 1.1rem;
+  z-index: 10; 
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.menu ul li a {
+  color: black;
+
+}
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+.tel {
+  background-color: rgb(6, 6, 58);
+  padding: 8px;
+  padding-inline: 40px;
+  color: #ffffff;
+  border-radius: 10px;
+  transition: background .2s;
+}
+.tel:hover {
+  background-color: rgb(10, 10, 92);
+  cursor: pointer;
+}
+.bars {
+  opacity: 0;
+  position: fixed;
+}
+
+@media (max-width: 850px) {
+  /* TRANSLATE UP */
+  header .header-top {
+    transform: translateY(-300px);
+    position: fixed;
+  }
+
+  header {
+    top: 0;
+    position: sticky;
+    background-color: #fff;
+    z-index: 10;
+  }
+
+  header .header-bottom{
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    position: sticky;
+  }
+
+  .bars {
+    opacity: 1;
+    cursor: pointer;
+    font-size: 30px;
+
+    color: #434343;
+    transition: color .2s;
+    display: block;
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .rotate {
+    animation: spin .5s forwards;
+  }
+  .reverse-rotate {
+    animation: reverse-spin .5s forwards;
+  }
+  .bars:hover {
+    color: #000;
+  }
+
+  .menu {
+    margin-top: 10px;
+    transform: translateY(-200px);
+    transition: all .3s;
+    position: fixed;
+    width: 100%;
+
+  }
+
+  .menu.active {
+    display: block;
+    background-color: #fdfafa;
+    padding: 10px;
+    z-index: -1;
+    transform: translateY(155px);
+    transition: all .3s;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .menu li {
+    width: 100%;
+  }
+
+  .menu li a {
+    display: block; 
+    width: 100%;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+}
+
+/* ANIMATIONS*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reverse-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
