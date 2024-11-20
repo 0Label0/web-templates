@@ -89,3 +89,17 @@ ScrollReveal().reveal('.reveal-bottom', {
   viewFactor: 0.2,
 });
 
+ScrollReveal().reveal('.reveal-bottom-1', {
+  delay: 200,
+  distance: '50px',
+  duration: 500,
+  easing: 'ease-out',
+  opacity: 0,
+  origin: 'bottom',
+  scale: 0.9,
+  mobile: true,
+  desktop: true,
+  reset: false,
+  viewFactor: 0.2,
+});
+

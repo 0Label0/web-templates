@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/general.css">
+  <link rel="stylesheet" href="../styles/form.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div>Horario: <strong>08:00 a 18:00</strong></div>
+      <div>Oficina: <strong>Calle Inventada, 43 239899, Ciudad Inventada</strong></div>
+      <div class="social-media-container">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+    </div>
+    <div class="header-bottom">
+
+      <i class="fas fa-bars bars"></i>
+      <h1 class="title">NombreEmpresa</h1>
+      <div>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./galery.html">Galeria</a></li>
+          <li><a href="./presupuesto.html">Presupuesto</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li>
+            <strong class="tel">
+              644-88-16-11
+            </strong>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="title-contact">
+    <h1>Contacto y asesoramiento</h1>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto quia doloribus, praesentium numquam molestiae eaque magnam tempora? Ducimus, iste tenetur explicabo enim</h5>
+  </section>
+  <section class="container">
+    <article class="article-slide">
+      <h2>Lorem, ipsum dolor.</h2>
+      <h3>+34 644 88 16 12</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur <strong> elit. Officiis eum, nobis, officia obcaecati</strong> recusandae, suscipit repellat aspernatur error quo quod sequi nostrum ipsam placeat quidem provident impedit amet repellendus pariatur!
+        aliquid <strong>Lorem ipsum dolor sit amet cuptatum?</strong> eum expedita quas repellendus saepe? Aperiam corrupti enim sit nemo Lorem ipsum dolor sit amet. <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ipsa.</strong> aliquid pariatur quasi numquam!
+      </p>
+      <img class="company-img" src="../assets/img/company-img.jpeg" alt="company img">
+    </article>
+    <article class="container-form">
+      <form class="form">
+        <h2>Rellena el formulario para poder contactar</h2>
+        <div class="section-form">
+          <label for="name">Nombre</label>
+          <input id="name" type="text">
+          <label for="lastname">Apellidos</label>
+          <input id="lastname" type="text">
+          <label for="company">Empresa (Opcional)</label>
+          <input id="company" type="text">
+        </div>
+        <div class="section-form">
+          <label for="tel">Teléfono</label>
+          <input id="tel" type="text">
+          <label for="email">Mail</label>
+          <input id="email" type="text">
+        </div>
+        <div class="section-form">
+          <label for="message">Mensaje</label>
+          <textarea id="message"></textarea>
+        </div>
+        <div class="consent">
+          <input type="checkbox" id="consent">
+          <label  for="consent">He leido y aceptado <strong>las políticas de privacidad</strong> y el <strong>aviso legal</strong></label>
+        </div>
+        <div class="section-form">
+          <button type="submit" id="submit">Solicitar más información</button>
+        </div>
+      </form>
+    </article>
+  </section>
+  <section class="container-map">
+    <h2>Nuestra oficina</h2>
+    <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1546.708272586868!2d-3.462304452282257!3d40.4391699135006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42379fe1a588cd%3A0x98ce458f6118a3f6!2sTorre%20Eiffel!5e0!3m2!1ses!2ses!4v1732118806570!5m2!1ses!2ses" width="600" height="550" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <footer>
+    <div class="social-media-container">
+      <i class="fab fa-instagram icon-footer"></i>
+      <i class="fab fa-twitter icon-footer"></i>
+      <i class="fab fa-facebook icon-footer"></i>
+      <i class="fab fa-linkedin icon-footer"></i>
+      <i class="fas fa-envelope icon-footer"></i>
+    </div>
+    <ul class="menu-footer">
+      <li class="menu-element"><a href="" class="menu-icon">Inicio</a></li>
+      <li class="menu-element"><a href="" class="menu-icon">Contacto</a></li>
+      <li class="menu-element"><a href="" class="menu-icon">Equipo</a></li>
+      <li class="menu-element"><a href="" class="menu-icon">Sobre nosotros</a></li>
+    </ul>
+    <p>@Todos los derechos reservados</p>
+  </footer>
+  <script src="../scripts/burger.js"></script>
+</body>
+</html>

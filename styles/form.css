@@ -1,0 +1,134 @@
+.title-contact {
+  margin: 0;
+  background: linear-gradient(to right, #1e3c72, #1f4e8a, #2a6cb3, #2a5298);
+  color: #ffffff;
+  padding-bottom: 35px;
+
+}
+.title-contact h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  margin-left: 20%;
+}
+.title-contact h5 {
+  font-size: .85em;
+  opacity: 0.8;
+  color: #ececec;
+  margin-top: 0;
+  margin-left: 20%;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #ececec;
+}
+
+@media (max-width: 1450px) {
+  .container {
+    flex-direction: column;
+  }
+  .google-maps {
+    width: 80%;
+  }
+}
+
+/* Form */
+.container-form {
+  color: white;
+  background-color: rgb(0, 0, 86);
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 800px;
+  min-width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-form h2 {
+  font-size: 1.7em;
+}
+
+.section-form {
+  flex-direction: column;
+  display: flex;
+  margin-top: 40px;
+}
+.section-form label {
+  margin-top: 15px;
+  font-size: larger;
+}
+.section-form input {
+  min-height: 40px;
+  font-size: large;
+}
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  height: 40px;
+  border: none;
+  background-color: aquamarine;
+  font-size: larger;
+  cursor: pointer;
+  font-weight: 800;
+  border-radius: 5px;
+  transition: all .4s;
+}
+#submit:hover {
+  background-color: rgb(162, 255, 224);
+}
+/* article slide */
+.article-slide {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 80px;
+  justify-content: center;
+}
+.article-slide h2 {
+  font-size: 2.5em;
+  color: var(--titles);
+}
+.article-slide h3 {
+  font-size: 2.6em;
+  color: var(--titles);
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.article-slide p {
+  font-size: 1.2em;
+  font-style: italic;
+}
+.company-img {
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+/*map*/
+.container-map {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  background-color: #ececec;
+
+}
+.container-map h2 {
+  font-size: 2.5em;
+  color: var(--titles);
+}
+.google-maps {
+  width: 64%;
+  border: none;
+}
