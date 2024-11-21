@@ -11,12 +11,13 @@ body {
   min-height: 100dvh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  overflow-x: none;
+  zoom: 1;
 }
 
 :root {
   --backgrounds: #007166;
   --grey-background: #fffbfbf9;
-  --movil-adaptation-px: 800px;
   --general-text: large;
   --line-height-general: 27px;
   --titles: #0f5584;
@@ -97,7 +98,6 @@ p {
   }
 }
 
-
 .testimonials {
   margin: 50px;
   display: flex;
@@ -157,7 +157,6 @@ p {
 .card h3 {
   font-size: 2em;
 }
-
 .stars-opinion div.bad {
   color: rgb(209, 209, 209);
 }
@@ -184,6 +183,7 @@ p {
 .services h2 {
   font-size: 3em;
   color: var(--titles);
+  margin: 0px;
 }
 .services p {
   font-size: larger;
