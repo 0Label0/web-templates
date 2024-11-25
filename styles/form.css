@@ -9,6 +9,8 @@
   font-size: 3.5em;
   margin-bottom: 20px;
   margin-left: 20%;
+  margin-right: 40px;
+
 }
 
 .title-contact h5 {
@@ -17,7 +19,7 @@
   color: #ececec;
   margin-top: 0;
   margin-left: 20%;
-
+  margin-right: 40px;
 }
 
 .container {
