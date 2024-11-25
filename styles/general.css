@@ -8,30 +8,30 @@
 body {
   margin: 0;
   padding: 0;
-  min-height: 100dvh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  overflow-x: none;
-  zoom: 1;
 }
 
 :root {
   --backgrounds: #007166;
   --grey-background: #fffbfbf9;
-  --general-text: large;
-  --line-height-general: 27px;
-  --titles: #0f5584;
+  --movil-adaptation-px: 800px;
+  --general-text-size: 1rem; 
+  --subtitle-text-size: 1.5rem; 
+  --title-text-size: 2.5rem; 
+  --line-height-general: 1.7; 
+  --title-color: #0f5584;
+  --title-font-size: 4rem;
 } 
 
 .start {
   display: flex;
   text-align: center;
-  font-size: var(--general-text);
+  font-size: var(--general-text-size);
   flex-wrap: nowrap;
   align-items: center;
   margin-bottom: 30px;
   margin-top: 30px;
-  
 }
 .start img {
   width: 80%;
@@ -44,18 +44,19 @@ body {
 }
 
 .start article div h1 {
-  font-size: 4em;
+  font-size: var(--title-font-size);
   margin: 10px;
-  color: var(--titles);
+  color: var(--title-color);
 }
 .start article div h2 {
-  font-size: 2em;
+  font-size: var(--subtitle-text-size);
   margin: 0px;
-  color: var(--titles);
+  color: var(--title-color);
 }
 
 p {
-  line-height: var(--line-height-general)
+  line-height: var(--line-height-general);
+  font-size: var(--general-text-size);
 }
 
 .abaut-us {
@@ -64,22 +65,23 @@ p {
   background-color: var(--grey-background);
 }
 
-.abaut-us h2{
+.abaut-us h2 {
   text-align: center;
-  font-size: 4em;
-  color: var(--titles);
+  font-size: var(--title-text-size);
+  color: var(--title-color);
 }
 
 .abaut-us article h3 {
   margin: 0px;
   text-align: center;
+  font-size: var(--subtitle-text-size);
 }
 
 .abaut-us article {
   display: grid;
   grid-template-columns: auto auto;
   margin: 20px;
-  font-size: var(--general-text);
+  font-size: var(--general-text-size);
   gap: 20px;
 }
 .abaut-us article div {
@@ -87,13 +89,12 @@ p {
   flex-direction: column;
 }
 
-
 @media (max-width: 800px) {
   .abaut-us article {
     grid-template-columns: auto;
   }
   .services {
-    font-size: larger;
+    font-size: var(--general-text-size);
     display: flex;
   }
 }
@@ -106,9 +107,10 @@ p {
   flex-direction: column;
 }
 .testimonials h2 {
-  font-size: 3em;
-  color: var(--titles);
+  font-size: var(--title-text-size);
+  color: var(--title-color);
 }
+
 .card-container {
   display: flex;
   max-width: 500px;
@@ -121,11 +123,29 @@ p {
   -webkit-overflow-scrolling: touch; 
   scroll-behavior: smooth;
   border-radius: 2px;
+  overscroll-behavior-x: contain;
+  overflow-x: auto;
 }
 .card-container::-webkit-scrollbar {
   display: none;
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(250, 244, 244);
+  margin: 4px;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  min-width: 400px;
+  justify-content: center;
+  text-align: center;
+  scroll-snap-align: center;
 
+}
+.card h3 {
+  font-size: var(--subtitle-text-size);
+}
 .fa-arrow-right,
 .fa-arrow-left {
   color: rgb(255, 189, 68);
@@ -140,23 +160,6 @@ p {
   color: rgb(254, 177, 35);
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(250, 244, 244);
-  margin: 4px;
-  width: auto;
-  height: auto;
-  padding: 20px;
-  min-width: 400px;
-  justify-content: center;
-  text-align: center;
-  scroll-snap-align: center;
-}
-
-.card h3 {
-  font-size: 2em;
-}
 .stars-opinion div.bad {
   color: rgb(209, 209, 209);
 }
@@ -181,12 +184,11 @@ p {
 }
 
 .services h2 {
-  font-size: 3em;
-  color: var(--titles);
-  margin: 0px;
+  font-size: var(--title-text-size);
+  color: var(--title-color);
 }
 .services p {
-  font-size: larger;
+  font-size: var(--general-text-size);
 }
 .services button {
   width: 140px;
@@ -202,7 +204,6 @@ p {
 }
 .services button:hover {
   background-color: #01b9a6;
-
 }
 
 .idea {
@@ -210,8 +211,6 @@ p {
   width: 40%;
   height: 40%;
 }
-
-
 
 @media (max-width: 1250px) {
   .start {
@@ -221,10 +220,13 @@ p {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 0px;
   }
   .idea {
     border-radius: 50px 0 50px 0;
-    min-width: 400px;
-
+    min-width: 200px;
+  }
+  .card {
+    width: 40%;
   }
 }

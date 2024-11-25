@@ -103,12 +103,12 @@ textarea {
 
 .article-slide h2 {
   font-size: 2.5em;
-  color: var(--titles);
+  color: var(--titles-color);
 }
 
 .article-slide h3 {
   font-size: 2.6em;
-  color: var(--titles);
+  color: var(--titles-color);
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
@@ -137,7 +137,7 @@ textarea {
 
 .container-map h2 {
   font-size: 2.5em;
-  color: var(--titles);
+  color: var(--titles-color);
 }
 
 .google-maps {
