@@ -33,6 +33,7 @@ header .header-bottom {
   position: sticky;
   font-size: 1.1rem;
   z-index: 10; 
+  padding: 20px;
 }
 
 .menu ul {
