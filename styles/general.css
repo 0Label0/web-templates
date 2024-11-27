@@ -171,7 +171,8 @@ p {
 .services-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .services {
@@ -207,8 +208,8 @@ p {
 
 .idea {
   border-radius: 50px 0 0 50px;
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
 }
 
 @media (max-width: 1250px) {

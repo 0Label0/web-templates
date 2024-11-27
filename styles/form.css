@@ -96,12 +96,12 @@ textarea {
 
 .article-slide h2 {
   font-size: 2.5em;
-  color: var(--titles-color);
+  color: var(--title-color);
 }
 
 .article-slide h3 {
   font-size: 2.6em;
-  color: var(--titles-color);
+  color: var(--title-color);
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
@@ -130,7 +130,7 @@ textarea {
 
 .container-map h2 {
   font-size: 2.5em;
-  color: var(--titles-color);
+  color: var(--title-color);
 }
 
 .google-maps {
@@ -152,9 +152,15 @@ textarea {
     justify-content: center;
     flex-direction: column;
   }
+  .section-form input {
+    min-height: 20px;
+    font-size: large;
+    padding-left: 4px;
+  }
   #submit {
     background-color: #1e3c72;
     color:  #fff;
+    
   }
   #submit:hover {
     background-color: #2a5298;
@@ -170,11 +176,11 @@ textarea {
 
   .container-form {
     min-width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 15px;
+    padding: 5px;
   }
 
   .title-contact h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .title-contact h5 {
@@ -188,5 +194,9 @@ textarea {
   .article-slide {
     max-width: none;
     margin: 30px;
+
+  }
+  .article-slide h2, .article-slide h3 {
+    font-size: 1.5em;
   }
 }
