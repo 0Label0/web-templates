@@ -175,8 +175,13 @@ textarea {
   }
 
   .container-form {
-    min-width: 100%; /* Ocupa todo el ancho disponible */
+    min-width: 100%;
     padding: 5px;
+  }
+  .form {
+    width: 100%;
+    margin: 0;
+
   }
 
   .title-contact h1 {
