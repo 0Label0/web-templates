@@ -70,7 +70,7 @@ header .header-bottom {
 @media (max-width: 850px) {
   /* TRANSLATE UP */
   header .header-top {
-    transform: translateY(-300px);
+    display: none;
     position: fixed;
   }
 
@@ -112,20 +112,19 @@ header .header-bottom {
 
   .menu {
     margin-top: 10px;
-    transform: translateY(-200px);
     transition: all .3s;
     position: fixed;
+    display: none;
     width: 100%;
 
   }
 
   .menu.active {
-    display: block;
-    background-color: #fdfafa;
-    padding: 10px;
-    z-index: -1;
-    transform: translateY(155px);
-    transition: all .3s;
+    display: flex;
+    background-color: #fffafa;
+    margin: 0;
+    top: 70px;
+    left: 0;
   }
 
   .menu ul {

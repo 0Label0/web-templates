@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="../styles/general.css">
   <link rel="stylesheet" href="../styles/footer.css">
   <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/form2.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
   <header>
@@ -45,7 +45,37 @@
   </header>
 
   <main>
-
+    <section>
+      <form class="form">
+        <h2>Rellena el formulario para poder contactar</h2>
+        <div class="section-form">
+          <label for="name">Nombre</label>
+          <input id="name" type="text">
+          <label for="lastname">Apellidos</label>
+          <input id="lastname" type="text">
+          <label for="company">Empresa (Opcional)</label>
+          <input id="company" type="text">
+        </div>
+        <div class="section-form">
+          <label for="tel">Teléfono</label>
+          <input id="tel" type="text">
+          <label for="email">Mail</label>
+          <input id="email" type="text">
+        </div>
+        <div class="section-form">
+          <label for="message">Mensaje</label>
+          <textarea id="message"></textarea>
+        </div>
+        <div class="consent">
+          <input type="checkbox" id="consent">
+          <label  for="consent">He leido y aceptado <strong>las políticas de privacidad</strong> y el <strong>aviso legal</strong></label>
+        </div>
+        <div class="section-form">
+          <button type="submit" id="submit">Solicitar más información</button>
+        </div>
+      </form>
+    </section>
+   
   </main>
 
   <footer>
@@ -57,10 +87,10 @@
       <i class="fas fa-envelope icon-footer"></i>
     </div>
     <ul class="menu-footer">
-      <li class="menu-element"><a href="" class="menu-icon">Inicio</a></li>
-      <li class="menu-element"><a href="" class="menu-icon">Contacto</a></li>
-      <li class="menu-element"><a href="" class="menu-icon">Equipo</a></li>
-      <li class="menu-element"><a href="" class="menu-icon">Sobre nosotros</a></li>
+      <li class="menu-element"><a href="../index.html" class="menu-icon">Inicio</a></li>
+      <li class="menu-element"><a href="./contact.html" class="menu-icon">Contacto</a></li>
+      <li class="menu-element"><a href="./presupuesto.html" class="menu-icon">Presupuesto</a></li>
+      <li class="menu-element"><a href="./galery.html" class="menu-icon">Tienda</a></li>
     </ul>
     <p>@Todos los derechos reservados</p>
   </footer>
